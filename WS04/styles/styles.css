@@ -1,0 +1,18 @@
+body {
+    color: rgb(89, 52, 99);
+    background-color: rgb(243, 198, 131);
+    background-image: url("../Kuvat/kuva.avif");
+    font-family: " Arial";
+}
+
+p {
+    font-size: 20px;
+}
+
+.btn {
+    background-color: rgb(144, 187, 230);
+}
+
+#nappi {
+    font-size: 48px;
+}

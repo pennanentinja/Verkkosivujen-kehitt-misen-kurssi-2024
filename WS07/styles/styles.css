@@ -1,0 +1,20 @@
+body {
+    background-color: white;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+div.row {
+    text-align: center;
+    border: solid 2px;
+    background-color: black;
+    color: white;
+}
+
+div.col {
+    border: solid 2px;
+    padding: 50px;
+}

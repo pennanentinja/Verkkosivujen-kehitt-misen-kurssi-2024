@@ -1,0 +1,113 @@
+/* Perusasetukset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  /* Ylävalikko */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  header .logo h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 1rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  nav ul li a.active {
+    font-weight: bold; /* Teksti tummaksi */
+    color:white;   /* Vaihtoehtoinen väri (esim. oranssi) */
+  }
+  
+  /* Hero-osio */
+  .hero {
+    background: #eee;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .hero h2 {
+    margin: 0;
+  }
+  
+  /* Kortit */
+  .content {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+  }
+  
+  .card {
+    background: #f4f4f4;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: center;
+    width: 30%;
+  }
+  
+  .card h3 {
+    margin: 0;
+  }
+  
+  .card a {
+    display: block;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Footer */
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  .search-container {
+    margin: 1rem;
+    display: flex;
+  }
+  
+  #searchInput {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 300px;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #e67e22;
+  }

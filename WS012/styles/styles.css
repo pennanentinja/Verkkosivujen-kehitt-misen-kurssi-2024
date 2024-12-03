@@ -1,0 +1,109 @@
+header,
+footer {
+    padding: 1rem;
+    color: rgb(75, 158, 221);
+    background-color: #d1eef8;
+    clear: left;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size:90px;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+
+nav ul li a.active {
+    font-weight: bold; /* Teksti tummaksi */
+    color:rgb(218, 166, 166);   /* Vaihtoehtoinen väri (esim. oranssi) */
+  }
+
+  nav ul li a {
+    color: #474c51;
+    text-decoration: none;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 1rem;
+  }
+
+  .search-container {
+    margin: 1rem;
+    display: flex;
+  }
+  
+  #searchInput {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 300px;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    background-color: #4b87c7;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #65aff5;
+  }
+
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto; /* Lisää tilaa kuvan ylä- ja alapuolelle */
+    padding: 0 20px; /* Lisää tyhjää vasemmalle ja oikealle */
+  }
+
+  .centered-image {
+    max-width: 90%; /* Kuva vie korkeintaan 90% sivun leveydestä */
+    height: 800px;   /* Kuva säilyttää mittasuhteet */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Hieno varjo kuvan ympärille */
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+  }
+  
+  .card {
+    background: #f4f4f4;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: center;
+    width: 30%;
+  }
+  
+  .card h3 {
+    margin: 0;
+  }
+  
+  .card a {
+    display: block;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #333;
+  }

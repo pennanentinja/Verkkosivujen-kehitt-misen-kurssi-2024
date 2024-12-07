@@ -1,109 +1,248 @@
 header,
 footer {
-    padding: 1rem;
-    color: rgb(75, 158, 221);
-    background-color: #d1eef8;
-    clear: left;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
+  padding: 1rem;
+  color: rgb(75, 158, 221);
+  background-color: #d1eef8;
+  clear: left;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Sallii elementtien rivittymisen tarvittaessa */
 }
 
-header .logo h1 {
-    margin: 0;
-    font-size:90px;
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Asettavat elementit pinoon */
+    align-items: center; /* Keskittää sisältö */
   }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-  }
-
-nav ul li a.active {
-    font-weight: bold; /* Teksti tummaksi */
-    color:rgb(218, 166, 166);   /* Vaihtoehtoinen väri (esim. oranssi) */
-  }
-
-  nav ul li a {
-    color: #474c51;
-    text-decoration: none;
+  header .logo h1 {
+    font-size: 50px; /* Pienentää fonttikokoa pienemmillä näytöillä */
   }
 
   nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+    flex-direction: column; /* Muuttaa navigaation pystysuuntaiseksi */
+    align-items: center; /* Keskittää linkit */
   }
-  
+
   nav ul li {
-    margin: 0 1rem;
+    margin: 0.5rem 0; /* Lisää tilaa linkkien väliin */
   }
 
   .search-container {
-    margin: 1rem;
-    display: flex;
-  }
-  
-  #searchInput {
-    padding: 0.5rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    width: 300px;
-  }
-  
-  button {
-    padding: 0.5rem 1rem;
-    margin-left: 0.5rem;
-    background-color: #4b87c7;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #65aff5;
-  }
-
-
-  .image-container {
-    display: flex;
-    justify-content: center;
-    margin: 40px auto; /* Lisää tilaa kuvan ylä- ja alapuolelle */
-    padding: 0 20px; /* Lisää tyhjää vasemmalle ja oikealle */
-  }
-
-  .centered-image {
-    max-width: 90%; /* Kuva vie korkeintaan 90% sivun leveydestä */
-    height: 800px;   /* Kuva säilyttää mittasuhteet */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Hieno varjo kuvan ympärille */
-  }
-
-  .content {
-    display: flex;
-    justify-content: space-around;
-    padding: 2rem;
-  }
-  
-  .card {
-    background: #f4f4f4;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    text-align: center;
-    width: 30%;
-  }
-  
-  .card h3 {
-    margin: 0;
-  }
-  
-  .card a {
-    display: block;
+    width: 100%; /* Tehtävästä hakukenttä menee täyteen leveydelle */
     margin-top: 1rem;
-    text-decoration: none;
-    color: #333;
+    display: block; /* Aseta hakupainike alapuolelle */
   }
+
+  #searchInput {
+    width: 100%; /* Laajentaa hakukenttää koko leveydelle */
+    margin-bottom: 0.5rem;
+  }
+
+  button {
+    width: 100%; /* Laajentaa painikkeen täyttämään koko leveys */
+    margin-right: 10px; /* Lisää väli oikeaan reunaan */
+  }
+}
+
+header .logo h1 {
+  margin: 0;
+  font-size: 90px;
+}
+
+br {
+  display: inline; /* Varmistaa, että <br> toimii normaalisti */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+nav ul li a.active {
+  font-weight: bold; /* Teksti tummaksi */
+  color: rgb(218, 166, 166); /* Vaihtoehtoinen väri (esim. oranssi) */
+}
+
+nav ul li a {
+  color: #474c51;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+.search-container {
+  margin: 1rem;
+  display: flex;
+}
+
+#searchInput {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 300px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  background-color: #4b87c7;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 20px; /* Lisää väli oikeaan reunaan */
+}
+
+button:hover {
+  background-color: #65aff5;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 5px;
+  margin: 0; /* Lisää tilaa ylemmän ja alemman elementin väliin */
+}
+
+h2 {
+  margin: 0; /* Poistaa ylimääräiset marginaalit otsikon ympäriltä */
+  padding-left: 0; /* Asettaa saman aloituskohdan kuin laatikon sisäpuolen teksti */
+}
+
+#nav2 {
+  margin: 0;
+  padding: 10px 20px; /* Teksti noudattaa otsikon vasenta linjaa */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin: 40px auto; /* Lisää tilaa kuvan ylä- ja alapuolelle */
+  padding: 0 20px; /* Lisää tyhjää vasemmalle ja oikealle */
+}
+
+.centered-image {
+  max-width: 97.5%; /* Kuva vie korkeintaan 90% sivun leveydestä */
+  height: 800px; /* Kuva säilyttää mittasuhteet */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Hieno varjo kuvan ympärille */
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.card {
+  background: #8cd5f5;
+  padding: 1rem;
+  border: 1px solid #141f32;
+  text-align: center;
+  width: 28%;
+}
+
+.card h3 {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+}
+
+.card a {
+  display: block;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #333;
+  font-size: 40px;
+}
+
+#fontti {
+  font-size: 15px;
+}
+
+#content2 {
+  display: flex; /* Käytetään flexboxia */
+  justify-content: flex-start; /* Kuvan ja tekstin kohdistus vasemmalle */
+  align-items: center; /* Kohdistaa kuvan ja tekstin pystysuunnassa */
+  padding: 2rem;
+}
+
+#säbäkenttä {
+  width: 200px; /* Kuvan leveys */
+  height: auto; /* Kuvan korkeus säilyttää kuvasuhteen */
+  border: 1px solid #ccc; /* Hieno reunus kuvan ympärille */
+}
+
+#content2 p {
+  overflow: hidden; /* Korjaa floatin mahdolliset ongelmat */
+  margin: 0;
+}
+
+.tekstikenttä {
+  display: flex; /* Flex-kontaineri kuvalle ja tekstille */
+  align-items: center; /* Kohdistaa tekstin keskelle kuvaa pystysuunnassa */
+}
+
+.kuvantausta {
+  background-color: black; /* Musta tausta */
+  display: flex; /* Flexbox-asettelu */
+  justify-content: center; /* Keskittää kuvan vaakasuunnassa */
+  align-items: center; /* Keskittää kuvan pystysuunnassa */
+  padding: 10px; /* Lisää tilaa kuvan ympärille */
+  width: fit-content; /* Rajoittaa taustan koon kuvan mukaan */
+  margin-right: 15px; /* Lisää tilaa tekstin ja kuvan välille */
+}
+
+#content3 {
+  display: flex; /* Käytetään flexboxia */
+  justify-content: flex-start; /* Kuvan ja tekstin kohdistus vasemmalle */
+  align-items: center; /* Kohdistaa kuvan ja tekstin pystysuunnassa */
+  padding: 2rem;
+}
+
+#kokotaulukko {
+  width: 200px; /* Kuvan leveys */
+  height: auto; /* Kuvan korkeus säilyttää kuvasuhteen */
+  border: 1px solid #ccc; /* Hieno reunus kuvan ympärille */
+}
+
+#content4 {
+  display: flex; /* Käytetään flexboxia */
+  justify-content: flex-start; /* Kuvan ja tekstin kohdistus vasemmalle */
+  align-items: center; /* Kohdistaa kuvan ja tekstin pystysuunnassa */
+  padding: 2rem;
+}
+
+#tulospalvelu {
+  width: 200px; /* Kuvan leveys */
+  height: auto; /* Kuvan korkeus säilyttää kuvasuhteen */
+  border: 1px solid #ccc; /* Hieno reunus kuvan ympärille */
+}
+
+#gallery {
+  display: grid; /* Aktivoi Grid-asettelu */
+  grid-template-columns: repeat(4, 1fr); /* Neljä saraketta */
+  gap: 10px; /* Kuvien välinen tila */
+  padding: 1rem; /* Tyhjää gallerian reunoille */
+  justify-content: center; /* Keskittää gallerian */
+}
+
+#gallery img {
+  width: 100%; /* Kuva täyttää sarakkeen leveyden */
+  height: auto; /* Säilyttää mittasuhteet */
+  border: 2px solid #ddd; /* Kevyt reunus */
+  border-radius: 5px; /* Pyöristetyt reunat */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Varjostus */
+}

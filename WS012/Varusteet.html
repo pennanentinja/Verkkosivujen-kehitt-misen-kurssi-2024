@@ -22,14 +22,61 @@
         </ul>
       </nav>
 
-      <div class="search-container">
-        <input type="text" id="searchInput" placeholder="Hae sivulta...">
-        <button onclick="performSearch()">Haku</button>
-      </div>
 
     </header>
 
-    <footer>Copyright © pennanentinja</footer>
+    <main class="container">
+      <h3>Mitä varusteita pelaaja tarvitsee?</h3>
+      <p>Salibandyn pelaaja tarvitsee perusvarusteet, jotka takaavat turvallisuuden ja mukavuuden kentällä. Maila on tärkein väline, ja sen tulee olla pelaajan pituudelle ja pelityylille sopiva. Suojalasit ovat pakolliset monissa liigoissa, sillä ne suojaavat silmiä mahdollisilta iskuilta. Hyvät sisäpelikengät tarjoavat pitoa ja tukevat liikettä, vähentäen loukkaantumisriskiä. Pelaajat käyttävät usein kevyitä urheiluvaatteita, jotka hengittävät hyvin. Lisäksi maalivahdit tarvitsevat erityisiä varusteita, kuten kypärän, polvisuojat ja rintapanssarin, jotta he voivat torjua laukauksia turvallisesti. Juomapullo ja hikipyyhe kuuluvat myös olennaisiin varusteisiin pitämään pelaajan vireystilan korkealla ottelun aikana.
+      <br> <br> Alapuolelta löydät kolme kuvakarusellia, jotka sisältävät esimerkkejä erilaisista mailoista, suojalaseista sekä sisäspelikengistä. Mailoja löytyy monelta eri valmistajalta, ja valmistajilla on vielä erikseen useita eri mailavaihtoehtoja, joista jokainen voi itselleen sopivan valita. Sisäpelikenkiäkin valmistaa useampi firma. Täytyy vain löytää itselle ne parhaimmat kengät, jotka istuvat omaan jalkaan mahdollisimman hyvin. Kengillä on myös pakpo juosta, joten niiden valitseminen tarkasti ja oikean koon mukaan on välttämätöntä. Suojalasejakin löytyy useammalta valmistajalta. Nykyään lukee säännöissä, että sarjatasoilla pelaavat, 2000-luvun jälkeen syntyneiden, on pakko käyttää suojalaseja. Näitä vanhempien pelaajien ei ole pakko niitä käyttää, mutta olisihan se suositeltavaa. Suojalasit pelastavat silmät mahdolliselta pallon, mailan, kyynerpään tai jonkun muun iskulta. </p>
+      <div class="carousel-container">
+        <!-- Karuselli 1 -->
+        <div class="carousel" id="carousel1">
+          <button class="prev" onclick="moveCarousel('carousel1', -1)">&#10094;</button>
+          <div class="carousel-images">
+            <img src="./images/Mailat/exelElite.png" alt="Maila">
+            <img src="./images/Mailat/fatpipenextg2.png" alt="Maila">
+            <img src="./images/Mailat/fatpiperawconcept2.png" alt="Maila">
+            <img src="./images/Mailat/oxdoghyperlight2.png" alt="Maila">
+            <img src="./images/Mailat/Oxdogsense2.png" alt="Maila">
+            <img src="./images/Mailat/Unihocevolitepro3.png" alt="Maila">
+          </div>
+          <button class="next" onclick="moveCarousel('carousel1', 1)">&#10095;</button>
+        </div>
+  
+        <!-- Karuselli 2 -->
+        <div class="carousel" id="carousel2">
+          <button class="prev" onclick="moveCarousel('carousel2', -1)">&#10094;</button>
+          <div class="carousel-images">
+            <img src="./images/Sisäpelikengät/adidas2.png" alt="Kengät">
+            <img src="./images/Sisäpelikengät/asicsm.png" alt="Kengät">
+            <img src="./images/Sisäpelikengät/asicsn.png" alt="Kengät">
+            <img src="./images/Sisäpelikengät/puma2.png" alt="Kengät">
+            <img src="./images/Sisäpelikengät/puma22.png" alt="Kengät">
+            <img src="./images/Sisäpelikengät/soc2.png" alt="Kengät">
+          </div>
+          <button class="next" onclick="moveCarousel('carousel2', 1)">&#10095;</button>
+        </div>
+  
+        <!-- Karuselli 3 -->
+        <div class="carousel" id="carousel3">
+          <button class="prev" onclick="moveCarousel('carousel3', -1)">&#10094;</button>
+          <div class="carousel-images">
+            <img src="./images/Lasit/fatpipesuojalasit2.png" alt="Suojalasit">
+            <img src="./images/Lasit/fatpipesuojalasit222.png" alt="Suojalasit">
+            <img src="./images/Lasit/oxdogsuojalasit2.png" alt="Suojalasit">
+            <img src="./images/Lasit/unihocsuojalasit2.png" alt="Suojalasit">
+          </div>
+          <button class="next" onclick="moveCarousel('carousel3', 1)">&#10095;</button>
+        </div>
+      </div>
+    </main>
+  
+    <footer>
+      Copyright © pennanentinja
+    </footer>
+
+    <script src="scripts/carousel.js"></script>
 
   </body>
 </html>
